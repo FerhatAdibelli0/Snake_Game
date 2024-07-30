@@ -39,6 +39,7 @@ while is_going_on:
     # Detect collision with tail
     for segment in snake.segments:
         if segment == snake.head:
+            print("This is head")
             pass
         elif snake.head.distance(segment) < 10:
             is_going_on = False
